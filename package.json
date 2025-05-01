@@ -1,0 +1,121 @@
+{
+  "name": "cntr-groups",
+  "displayName": "ControlGroups",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [{
+      "command": "extension.setMarker1",
+      "title": "Set Marker 1"
+    },
+    {
+      "command": "extension.gotoMarker1",
+      "title": "Goto Marker 1"
+    },
+    {
+      "command": "extension.setMarker2",
+      "title": "Set Marker 2"
+    },
+    {
+      "command": "extension.gotoMarker2",
+      "title": "Goto Marker 2"
+    },
+    {
+      "command": "extension.setMarker3",
+      "title": "Set Marker 3"
+    },
+    {
+      "command": "extension.gotoMarker3",
+      "title": "Goto Marker 3"
+    },
+    {
+      "command": "extension.setMarker4",
+      "title": "Set Marker 4"
+    },
+    {
+      "command": "extension.gotoMarker4",
+      "title": "Goto Marker 4"
+    },
+    {
+      "command": "extension.setMarker5",
+      "title": "Set Marker 5"
+    },
+    {
+      "command": "extension.gotoMarker5",
+      "title": "Goto Marker 5"
+    }],
+  "keybindings": [
+    {
+      "command": "extension.setMarker1",
+      "key": "ctrl+shift+1",
+      "when": "editorTextFocus || debuggerFocused"
+    },
+    {
+      "command": "extension.gotoMarker1",
+      "key": "ctrl+1",
+      "when": "editorTextFocus || debuggerFocused"
+    },
+    {
+      "command": "extension.setMarker2",
+      "key": "ctrl+shift+2",
+      "when": "editorTextFocus || debuggerFocused"
+    },
+    {
+      "command": "extension.gotoMarker2",
+      "key": "ctrl+2",
+      "when": "editorTextFocus || debuggerFocused"
+    },
+    {
+      "command": "extension.setMarker3",
+      "key": "ctrl+shift+3",
+      "when": "editorTextFocus || debuggerFocused"
+    },
+    {
+      "command": "extension.gotoMarker3",
+      "key": "ctrl+3",
+      "when": "editorTextFocus || debuggerFocused"
+    },
+    {
+      "command": "extension.setMarker4",
+      "key": "ctrl+shift+4",
+      "when": "editorTextFocus || debuggerFocused"
+    },
+    {
+      "command": "extension.gotoMarker4",
+      "key": "ctrl+4",
+      "when": "editorTextFocus || debuggerFocused"
+    },
+    {
+      "command": "extension.setMarker5",
+      "key": "ctrl+shift+5",
+      "when": "editorTextFocus || debuggerFocused"
+    },
+    {
+      "command": "extension.gotoMarker5",
+      "key": "ctrl+5",
+      "when": "editorTextFocus || debuggerFocused"
+    }
+  ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "yarn run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.96.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "eslint": "^9.23.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
