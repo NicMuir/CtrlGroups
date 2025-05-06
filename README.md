@@ -44,3 +44,5 @@ Initial release of cntr-groups with numbered icons 1-5.
 * [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
 **Enjoy!**
+
+vsce package 
