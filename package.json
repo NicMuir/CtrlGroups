@@ -3,7 +3,7 @@
   "publisher": "NicMuir",
   "displayName": "ControlGroups",
   "description": "Set and jump to numbered code anchors using Ctrl+Shift+number and Ctrl+number.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/NicMuir/CodeAnchor.git"
@@ -11,52 +11,186 @@
   "engines": {
     "vscode": "^1.96.0"
   },
+  "icon": "resources/icon.png",
   "categories": [
     "Other"
   ],
   "main": "./extension.js",
   "contributes": {
     "commands": [
-      { "command": "extension.setMarker1", "title": "Set Marker 1" },
-      { "command": "extension.gotoMarker1", "title": "Goto Marker 1" },
-      { "command": "extension.setMarker2", "title": "Set Marker 2" },
-      { "command": "extension.gotoMarker2", "title": "Goto Marker 2" },
-      { "command": "extension.setMarker3", "title": "Set Marker 3" },
-      { "command": "extension.gotoMarker3", "title": "Goto Marker 3" },
-      { "command": "extension.setMarker4", "title": "Set Marker 4" },
-      { "command": "extension.gotoMarker4", "title": "Goto Marker 4" },
-      { "command": "extension.setMarker5", "title": "Set Marker 5" },
-      { "command": "extension.gotoMarker5", "title": "Goto Marker 5" },
-      { "command": "extension.setMarker6", "title": "Set Marker 6" },
-      { "command": "extension.gotoMarker6", "title": "Goto Marker 6" },
-      { "command": "extension.setMarker7", "title": "Set Marker 7" },
-      { "command": "extension.gotoMarker7", "title": "Goto Marker 7" },
-      { "command": "extension.setMarker8", "title": "Set Marker 8" },
-      { "command": "extension.gotoMarker8", "title": "Goto Marker 8" },
-      { "command": "extension.setMarker9", "title": "Set Marker 9" },
-      { "command": "extension.gotoMarker9", "title": "Goto Marker 9" },
-      { "command": "extension.clearAllMarkers", "title": "Clear All Markers" }
+      {
+        "command": "extension.setMarker1",
+        "title": "Set Marker 1"
+      },
+      {
+        "command": "extension.gotoMarker1",
+        "title": "Goto Marker 1"
+      },
+      {
+        "command": "extension.setMarker2",
+        "title": "Set Marker 2"
+      },
+      {
+        "command": "extension.gotoMarker2",
+        "title": "Goto Marker 2"
+      },
+      {
+        "command": "extension.setMarker3",
+        "title": "Set Marker 3"
+      },
+      {
+        "command": "extension.gotoMarker3",
+        "title": "Goto Marker 3"
+      },
+      {
+        "command": "extension.setMarker4",
+        "title": "Set Marker 4"
+      },
+      {
+        "command": "extension.gotoMarker4",
+        "title": "Goto Marker 4"
+      },
+      {
+        "command": "extension.setMarker5",
+        "title": "Set Marker 5"
+      },
+      {
+        "command": "extension.gotoMarker5",
+        "title": "Goto Marker 5"
+      },
+      {
+        "command": "extension.setMarker6",
+        "title": "Set Marker 6"
+      },
+      {
+        "command": "extension.gotoMarker6",
+        "title": "Goto Marker 6"
+      },
+      {
+        "command": "extension.setMarker7",
+        "title": "Set Marker 7"
+      },
+      {
+        "command": "extension.gotoMarker7",
+        "title": "Goto Marker 7"
+      },
+      {
+        "command": "extension.setMarker8",
+        "title": "Set Marker 8"
+      },
+      {
+        "command": "extension.gotoMarker8",
+        "title": "Goto Marker 8"
+      },
+      {
+        "command": "extension.setMarker9",
+        "title": "Set Marker 9"
+      },
+      {
+        "command": "extension.gotoMarker9",
+        "title": "Goto Marker 9"
+      },
+      {
+        "command": "extension.clearAllMarkers",
+        "title": "Clear All Markers"
+      }
     ],
     "keybindings": [
-      { "command": "extension.setMarker1", "key": "ctrl+shift+1", "when": "editorTextFocus || debuggerFocused" },
-      { "command": "extension.gotoMarker1", "key": "ctrl+1", "when": "editorTextFocus || debuggerFocused" },
-      { "command": "extension.setMarker2", "key": "ctrl+shift+2", "when": "editorTextFocus || debuggerFocused" },
-      { "command": "extension.gotoMarker2", "key": "ctrl+2", "when": "editorTextFocus || debuggerFocused" },
-      { "command": "extension.setMarker3", "key": "ctrl+shift+3", "when": "editorTextFocus || debuggerFocused" },
-      { "command": "extension.gotoMarker3", "key": "ctrl+3", "when": "editorTextFocus || debuggerFocused" },
-      { "command": "extension.setMarker4", "key": "ctrl+shift+4", "when": "editorTextFocus || debuggerFocused" },
-      { "command": "extension.gotoMarker4", "key": "ctrl+4", "when": "editorTextFocus || debuggerFocused" },
-      { "command": "extension.setMarker5", "key": "ctrl+shift+5", "when": "editorTextFocus || debuggerFocused" },
-      { "command": "extension.gotoMarker5", "key": "ctrl+5", "when": "editorTextFocus || debuggerFocused" },
-      { "command": "extension.setMarker6", "key": "ctrl+shift+6", "when": "editorTextFocus || debuggerFocused" },
-      { "command": "extension.gotoMarker6", "key": "ctrl+6", "when": "editorTextFocus || debuggerFocused" },
-      { "command": "extension.setMarker7", "key": "ctrl+shift+7", "when": "editorTextFocus || debuggerFocused" },
-      { "command": "extension.gotoMarker7", "key": "ctrl+7", "when": "editorTextFocus || debuggerFocused" },
-      { "command": "extension.setMarker8", "key": "ctrl+shift+8", "when": "editorTextFocus || debuggerFocused" },
-      { "command": "extension.gotoMarker8", "key": "ctrl+8", "when": "editorTextFocus || debuggerFocused" },
-      { "command": "extension.setMarker9", "key": "ctrl+shift+9", "when": "editorTextFocus || debuggerFocused" },
-      { "command": "extension.gotoMarker9", "key": "ctrl+9", "when": "editorTextFocus || debuggerFocused" },
-      { "command": "extension.clearAllMarkers", "key": "ctrl+shift+backspace", "when": "editorTextFocus || debuggerFocused" }
+      {
+        "command": "extension.setMarker1",
+        "key": "ctrl+shift+1",
+        "when": "editorTextFocus || debuggerFocused"
+      },
+      {
+        "command": "extension.gotoMarker1",
+        "key": "ctrl+1",
+        "when": "editorTextFocus || debuggerFocused"
+      },
+      {
+        "command": "extension.setMarker2",
+        "key": "ctrl+shift+2",
+        "when": "editorTextFocus || debuggerFocused"
+      },
+      {
+        "command": "extension.gotoMarker2",
+        "key": "ctrl+2",
+        "when": "editorTextFocus || debuggerFocused"
+      },
+      {
+        "command": "extension.setMarker3",
+        "key": "ctrl+shift+3",
+        "when": "editorTextFocus || debuggerFocused"
+      },
+      {
+        "command": "extension.gotoMarker3",
+        "key": "ctrl+3",
+        "when": "editorTextFocus || debuggerFocused"
+      },
+      {
+        "command": "extension.setMarker4",
+        "key": "ctrl+shift+4",
+        "when": "editorTextFocus || debuggerFocused"
+      },
+      {
+        "command": "extension.gotoMarker4",
+        "key": "ctrl+4",
+        "when": "editorTextFocus || debuggerFocused"
+      },
+      {
+        "command": "extension.setMarker5",
+        "key": "ctrl+shift+5",
+        "when": "editorTextFocus || debuggerFocused"
+      },
+      {
+        "command": "extension.gotoMarker5",
+        "key": "ctrl+5",
+        "when": "editorTextFocus || debuggerFocused"
+      },
+      {
+        "command": "extension.setMarker6",
+        "key": "ctrl+shift+6",
+        "when": "editorTextFocus || debuggerFocused"
+      },
+      {
+        "command": "extension.gotoMarker6",
+        "key": "ctrl+6",
+        "when": "editorTextFocus || debuggerFocused"
+      },
+      {
+        "command": "extension.setMarker7",
+        "key": "ctrl+shift+7",
+        "when": "editorTextFocus || debuggerFocused"
+      },
+      {
+        "command": "extension.gotoMarker7",
+        "key": "ctrl+7",
+        "when": "editorTextFocus || debuggerFocused"
+      },
+      {
+        "command": "extension.setMarker8",
+        "key": "ctrl+shift+8",
+        "when": "editorTextFocus || debuggerFocused"
+      },
+      {
+        "command": "extension.gotoMarker8",
+        "key": "ctrl+8",
+        "when": "editorTextFocus || debuggerFocused"
+      },
+      {
+        "command": "extension.setMarker9",
+        "key": "ctrl+shift+9",
+        "when": "editorTextFocus || debuggerFocused"
+      },
+      {
+        "command": "extension.gotoMarker9",
+        "key": "ctrl+9",
+        "when": "editorTextFocus || debuggerFocused"
+      },
+      {
+        "command": "extension.clearAllMarkers",
+        "key": "ctrl+shift+backspace",
+        "when": "editorTextFocus || debuggerFocused"
+      }
     ]
   },
   "scripts": {
@@ -65,11 +199,11 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.96.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "20.x",
-    "eslint": "^9.23.0",
+    "@types/vscode": "^1.96.0",
     "@vscode/test-cli": "^0.0.10",
-    "@vscode/test-electron": "^2.4.1"
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.23.0"
   }
 }
