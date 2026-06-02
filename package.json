@@ -1,16 +1,19 @@
 {
   "name": "cntr-groups",
-  "publisher": "YOUR_PUBLISHER_NAME",
+  "publisher": "NicMuir",
   "displayName": "ControlGroups",
-  "description": "",
+  "description": "Set and jump to numbered code anchors using Ctrl+Shift+number and Ctrl+number.",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NicMuir/CodeAnchor.git"
+  },
   "engines": {
     "vscode": "^1.96.0"
   },
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
     "commands": [
@@ -52,7 +55,8 @@
       { "command": "extension.setMarker8", "key": "ctrl+shift+8", "when": "editorTextFocus || debuggerFocused" },
       { "command": "extension.gotoMarker8", "key": "ctrl+8", "when": "editorTextFocus || debuggerFocused" },
       { "command": "extension.setMarker9", "key": "ctrl+shift+9", "when": "editorTextFocus || debuggerFocused" },
-      { "command": "extension.gotoMarker9", "key": "ctrl+9", "when": "editorTextFocus || debuggerFocused" }
+      { "command": "extension.gotoMarker9", "key": "ctrl+9", "when": "editorTextFocus || debuggerFocused" },
+      { "command": "extension.clearAllMarkers", "key": "ctrl+shift+backspace", "when": "editorTextFocus || debuggerFocused" }
     ]
   },
   "scripts": {

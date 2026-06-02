@@ -1,32 +1,30 @@
-# cntr-groups
+# ControlGroups
 
-A Visual Studio Code extension that provides numbered group icons for better organization and visual hierarchy in your workspace.
+A lightweight Visual Studio Code extension for setting and jumping to numbered code anchors.
 
 ## Features
 
-- Provides a set of numbered square icons (1-5) for visual grouping
-- Each number has a distinct color for easy identification
-- Icons are available in SVG format for high-quality display at any size
+- **Set anchors** with `Ctrl+Shift+1` through `Ctrl+Shift+9`
+- **Jump to anchors** with `Ctrl+1` through `Ctrl+9`
+- **Toggle markers** — press the same set shortcut again on an already-marked line to remove it
+- **Visual gutter icons** — colored numbered icons appear in the editor gutter for easy spotting
+- **Status bar indicator** — shows how many markers are currently active; click to clear all
+- **Clear all markers** via the Command Palette: `Clear All Markers`
 
-## Number Icons
+## Commands
 
-The extension includes a set of numbered square icons in the `resources` directory. Each number has a distinct color:
-
-- Number 1: Blue (#2196F3)
-- Number 2: Green (#4CAF50)
-- Number 3: Orange (#FF9800)
-- Number 4: Purple (#9C27B0)
-- Number 5: Red (#F44336)
-
-Each icon is a 16x16 SVG file with a rounded rectangle background and white text. The icons are designed to be visually distinct while maintaining a consistent style.
+| Command | Title | Keybinding |
+|---|---|---|
+| `extension.setMarker1` | Set Marker 1 | `Ctrl+Shift+1` |
+| `extension.gotoMarker1` | Goto Marker 1 | `Ctrl+1` |
+| ... | ... | ... |
+| `extension.setMarker9` | Set Marker 9 | `Ctrl+Shift+9` |
+| `extension.gotoMarker9` | Goto Marker 9 | `Ctrl+9` |
+| `extension.clearAllMarkers` | Clear All Markers | — |
 
 ## Requirements
 
-- Visual Studio Code 1.85.0 or higher
-
-## Extension Settings
-
-This extension currently does not contribute any VS Code settings.
+- Visual Studio Code 1.96.0 or higher
 
 ## Known Issues
 
@@ -34,15 +32,8 @@ No known issues at this time.
 
 ## Release Notes
 
-### 1.0.0
+See [CHANGELOG.md](CHANGELOG.md) for release history.
 
-Initial release of cntr-groups with numbered icons 1-5.
+## License
 
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
-
-vsce package 
+[MIT](LICENSE)
