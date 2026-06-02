@@ -20,7 +20,7 @@ A lightweight Visual Studio Code extension for setting and jumping to numbered c
 | ... | ... | ... |
 | `extension.setMarker9` | Set Marker 9 | `Ctrl+Shift+9` |
 | `extension.gotoMarker9` | Goto Marker 9 | `Ctrl+9` |
-| `extension.clearAllMarkers` | Clear All Markers | — |
+| `extension.clearAllMarkers` | Clear All Markers | `Ctrl+Shift+Backspace` |
 
 ## Requirements
 

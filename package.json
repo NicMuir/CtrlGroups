@@ -3,7 +3,7 @@
   "publisher": "NicMuir",
   "displayName": "ControlGroups",
   "description": "Set and jump to numbered code anchors using Ctrl+Shift+number and Ctrl+number.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/NicMuir/CodeAnchor.git"
@@ -61,7 +61,7 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "pretest": "yarn run lint",
+    "pretest": "npm run lint",
     "test": "vscode-test"
   },
   "devDependencies": {

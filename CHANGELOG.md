@@ -4,6 +4,11 @@ All notable changes to the "ControlGroups" extension will be documented in this 
 
 ## [Unreleased]
 
+## [0.0.2] - 2026-06-02
+
+- Fixed `Clear All Markers` keybinding to use Backspace instead of Delete on macOS
+- Removed `activationEvents` to rely on automatic activation
+
 ## [0.0.1] - 2025-05-19
 
 - Initial release
