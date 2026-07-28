@@ -1,3 +1,6 @@
+[![VS Marketplace](https://img.shields.io/visual-studio-marketplace/v/NicMuir.cntr-groups)](https://marketplace.visualstudio.com/items?itemName=NicMuir.cntr-groups)
+[![Installs](https://img.shields.io/visual-studio-marketplace/i/NicMuir.cntr-groups)](https://marketplace.visualstudio.com/items?itemName=NicMuir.cntr-groups)
+
 # ControlGroups
 
 A lightweight Visual Studio Code extension for setting and jumping to numbered code anchors.
